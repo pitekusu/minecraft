@@ -69,7 +69,8 @@ BlueMap はゲートウェイの外部ドメインに `bluemap.pitekusu.dev` を
 
 - TerraFirmaGreg Modern 0.13.18 の KubeJS リソースから、作物・植生・地形モデル、テクスチャと深界のディメンション・バイオーム定義を収録した。BlueMap で描画できるよう、一部のモデルとブロックステートを調整した。 [ソースとライセンス](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/tree/0.13.18)
 - TerraFirmaGreg Core Modern 0.9.34 のヒトデ・サルノコシカケのモデルから未定義の面を除去した。GregTech CEu Modern 7.5.3 と TFG の素材を参照し、鉱石テクスチャの色合成と BlueMap 用モデルを作成した。 [TerraFirmaGreg Core Modern](https://github.com/TerraFirmaGreg-Team/Core-Modern/tree/0.9.34) · [GregTech CEu Modern](https://github.com/GregTechCEu/GregTech-Modern/tree/v7.5.3)
-- 上記の LGPL 素材には [LGPL 3.0](LICENSES/LGPL-3.0.txt) と、同ライセンスが参照する [GPL 3.0](LICENSES/GPL-3.0.txt) を同梱する。BetterEnd 由来の素材の出典と改変箇所は [BetterEnd クレジット](LICENSES/BetterEnd-CREDITS.md) を参照。
+- 上記の LGPL 素材には [LGPL 3.0](LICENSES/LGPL-3.0.txt) と、同ライセンスが参照する [GPL 3.0](LICENSES/GPL-3.0.txt) を同梱する。Dries007 と AlcatrazEscapee の TerraFirmaCraft 3.2.28 に由来するサルノコシカケの `artists_conk_0.json`〜`artists_conk_4.json` は、2026年11月17日に BlueMap 用として未定義テクスチャ面を除去した。 [TerraFirmaCraft 3.2.28](https://github.com/TerraFirmaCraft/TerraFirmaCraft/tree/0acc975af53ec87cbe45b07e9076949e939fdb58) · [EUPL 1.2](LICENSES/TerraFirmaCraft.txt)
+- BetterEnd の素材の出典と変更箇所は [BetterEnd クレジット](LICENSES/BetterEnd-CREDITS.md) を参照。垂直ハーフブロックの補正は FirEmerald の Additional Placements 3.0.1 のブロックステートに対応する。 [Additional Placements](https://github.com/FirEmerald/Additional-Placements/tree/84d5eb1d67f5f420e950ee759fde1366d35398ae) · [MIT](LICENSES/Additional-Placements.txt)
 
 ## バックアップ
 
