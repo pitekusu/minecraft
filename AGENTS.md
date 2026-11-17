@@ -14,7 +14,7 @@
 
 ## Testing
 
-The repository uses manual smoke tests. For map or proxy changes, check `/settings.json` and `/maps/overworld/live/players.json` at `http://127.0.0.1:8100`. In the browser, load all three maps and inspect affected blocks. For live-update changes, verify terrain refresh and SSE reconnection through Playit, player polling, and head PNG loading.
+GitHub Actions runs the syntax, whitespace, and Quadlet checks on pushes to `main` and on pull requests. For map or proxy changes, also check `/settings.json` and `/maps/overworld/live/players.json` at `http://127.0.0.1:8100`. In the browser, load all three maps and inspect affected blocks. For live-update changes, verify terrain refresh and SSE reconnection through Playit, player polling, and head PNG loading.
 
 ## Style and Configuration
 

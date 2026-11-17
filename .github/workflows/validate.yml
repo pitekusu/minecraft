@@ -1,0 +1,51 @@
+name: Validate repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Syntax and Quadlet
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Check Bash and JavaScript syntax
+        run: |
+          bash -n scripts/prepare.sh
+          node --check config/bluemap-cli/web/player-polling-5.29.js
+
+      - name: Check diff whitespace
+        env:
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == pull_request ]]; then
+            base=HEAD^1
+          elif [[ "$PUSH_BEFORE" =~ ^0+$ ]]; then
+            base=$(git hash-object -t tree /dev/null)
+          else
+            base="$PUSH_BEFORE"
+            git cat-file -e "$base^{commit}" 2>/dev/null || git fetch --no-tags origin "$base"
+          fi
+          git diff --check "$base" HEAD --
+
+      - name: Dry-run Quadlet generation
+        run: |
+          generated_units=$(QUADLET_UNIT_DIRS="$PWD/quadlet" \
+            /usr/lib/systemd/system-generators/podman-system-generator --user --dryrun)
+          printf '%s\n' "$generated_units"
+          for unit in minecraft bluemap bluemap-proxy bluemap-network; do
+            if ! grep -Fxq -- "---$unit.service---" <<< "$generated_units"; then
+              printf 'Quadlet did not generate %s.service\n' "$unit" >&2
+              exit 1
+            fi
+          done
