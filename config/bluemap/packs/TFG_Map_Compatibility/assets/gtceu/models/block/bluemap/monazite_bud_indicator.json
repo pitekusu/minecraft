@@ -1,0 +1,8 @@
+{
+  "parent": "gtceu:block/bluemap/bud_indicator",
+  "textures": {
+    "base_secondary": "gtceu:block/bluemap/monazite_bud_indicator_base_secondary",
+    "crystal_primary": "gtceu:block/bluemap/monazite_bud_indicator_crystal_primary",
+    "crystal_secondary": "gtceu:block/bluemap/monazite_bud_indicator_crystal_secondary"
+  }
+}

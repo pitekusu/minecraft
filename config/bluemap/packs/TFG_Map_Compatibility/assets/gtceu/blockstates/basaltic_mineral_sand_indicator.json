@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "gtceu:block/surface_rock" },
+    "facing=up": { "model": "gtceu:block/surface_rock", "x": 180 },
+    "facing=north": { "model": "gtceu:block/surface_rock", "y": 90 },
+    "facing=south": { "model": "gtceu:block/surface_rock", "y": 270 },
+    "facing=west": { "model": "gtceu:block/surface_rock", "x": 270 },
+    "facing=east": { "model": "gtceu:block/surface_rock", "x": 90 }
+  }
+}

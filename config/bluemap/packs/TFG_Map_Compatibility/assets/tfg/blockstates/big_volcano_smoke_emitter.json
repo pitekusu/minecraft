@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tfg:block/big_volcano_smoke_emitter"
+    }
+  }
+}

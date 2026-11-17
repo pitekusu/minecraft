@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "gtceu:block/bluemap/pyroxenite_spodumene_ore",
+    "end": "gtceu:block/bluemap/pyroxenite_spodumene_ore_top"
+  }
+}

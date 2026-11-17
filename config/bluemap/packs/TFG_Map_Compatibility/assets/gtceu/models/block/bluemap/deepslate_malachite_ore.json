@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "gtceu:block/bluemap/deepslate_malachite_ore",
+    "end": "gtceu:block/bluemap/deepslate_malachite_ore_top"
+  }
+}

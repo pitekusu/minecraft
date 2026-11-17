@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfg:block/groundcover/ginkgo_twig"
+      },
+      {
+        "model": "tfg:block/groundcover/ginkgo_twig",
+        "y": 90
+      },
+      {
+        "model": "tfg:block/groundcover/ginkgo_twig",
+        "y": 180
+      },
+      {
+        "model": "tfg:block/groundcover/ginkgo_twig",
+        "y": 270
+      }
+    ]
+  }
+}

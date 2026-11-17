@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/wood/support/horizontal",
+  "textures": {
+    "texture": "minecraft:block/blackstone",
+    "particle": "minecraft:block/blackstone"
+  }
+}

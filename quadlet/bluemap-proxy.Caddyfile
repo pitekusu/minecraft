@@ -1,0 +1,43 @@
+{
+	admin off
+	persist_config off
+}
+
+http://:8100 {
+	@players {
+		method GET HEAD
+		path /maps/overworld/live/players.json /maps/underground/live/players.json /maps/beneath/live/players.json
+	}
+	handle @players {
+		header >Cache-Control no-store
+		reverse_proxy tfg-minecraft:8100 {
+			transport http {
+				response_header_timeout 5s
+			}
+		}
+	}
+
+	@playerheads {
+		method GET HEAD
+		path_regexp ^/maps/(overworld|underground|beneath)/assets/playerheads/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.png$
+	}
+	handle @playerheads {
+		reverse_proxy tfg-minecraft:8100
+	}
+
+	handle {
+		reverse_proxy tfg-bluemap:8100
+	}
+
+	# Keep the player list polling while Minecraft restarts.
+	handle_errors 502 503 504 {
+		handle @players {
+			header {
+				Cache-Control no-store
+				Content-Type application/json
+			}
+			respond `{"players":[]}` 200
+		}
+		respond "{err.status_text}" {err.status_code}
+	}
+}

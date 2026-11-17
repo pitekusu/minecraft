@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "gtceu:block/bluemap/deepslate_sulfur_ore",
+    "end": "gtceu:block/bluemap/deepslate_sulfur_ore_top"
+  }
+}

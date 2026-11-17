@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfg:block/groundcover/fallen_copper_lamp"
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_copper_lamp",
+        "y": 90
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_copper_lamp",
+        "y": 180
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_copper_lamp",
+        "y": 270
+      }
+    ]
+  }
+}

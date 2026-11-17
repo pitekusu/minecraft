@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs_tfc:block/ground_cover/loose/igneous_extrusive_2",
+  "textures": {
+    "all": "minecraft:block/tuff",
+    "particle": "minecraft:block/tuff"
+  }
+}

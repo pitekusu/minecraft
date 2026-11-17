@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/groundcover/fallen_leaves_height2",
+  "textures": {
+    "all": "tfg:block/wood/leaves/beech",
+    "particle": "tfg:block/wood/leaves/beech"
+  }
+}

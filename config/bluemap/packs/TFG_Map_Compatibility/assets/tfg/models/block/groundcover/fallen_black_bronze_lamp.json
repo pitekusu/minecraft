@@ -1,0 +1,7 @@
+{
+  "parent": "tfg:block/groundcover/fallen_lamp",
+  "textures": {
+    "metal": "tfc:block/metal/smooth/black_bronze",
+    "particle": "tfc:block/metal/smooth/black_bronze"
+  }
+}

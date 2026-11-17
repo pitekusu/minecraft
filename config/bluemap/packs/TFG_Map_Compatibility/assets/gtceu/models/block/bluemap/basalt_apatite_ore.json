@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gtceu:block/bluemap/basalt_apatite_ore"
+  }
+}

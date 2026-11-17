@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "tfg:block/rock/glauberite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": [
+      {
+        "model": "tfg:block/rock/glauberite"
+      },
+      {
+        "model": "tfg:block/rock/glauberite",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "tfg:block/rock/glauberite",
+        "x": 90
+      },
+      {
+        "model": "tfg:block/rock/glauberite",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

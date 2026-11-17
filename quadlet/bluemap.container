@@ -1,0 +1,35 @@
+[Unit]
+Description=BlueMap 5.29 renderer for TerraFirmaGreg Modern
+After=minecraft.service
+
+[Container]
+Image=ghcr.io/bluemap-minecraft/bluemap:v5.29@sha256:bb49bfdef996c6fd9cf68c8c6a2b79189e6711fa90ae4d43cf22d81a6811301e
+ContainerName=tfg-bluemap
+Network=bluemap.network
+UserNS=keep-id:uid=1000,gid=1000
+User=1000:1000
+LogDriver=journald
+PodmanArgs=--stop-timeout=60
+Environment=JAVA_TOOL_OPTIONS=-Xmx3g
+Volume=%h/codex/minecraft/data/world:/app/world:ro
+Volume=%h/codex/minecraft/data/mods:/app/mods:ro
+Volume=%h/codex/minecraft/data/config/bluemap/packs:/app/config/packs:ro
+Volume=%h/codex/minecraft/config/bluemap/maps:/app/config/maps:ro
+Volume=%h/codex/minecraft/config/bluemap-cli/core.conf:/app/config/core.conf:ro
+Volume=%h/codex/minecraft/config/bluemap-cli/webapp.conf:/app/config/webapp.conf:ro
+Volume=%h/codex/minecraft/config/bluemap-cli/webserver.conf:/app/config/webserver.conf:ro
+Volume=%h/codex/minecraft/config/bluemap-cli/storages/file.conf:/app/config/storages/file.conf:ro
+Volume=%h/codex/minecraft/data/bluemap-cli/data:/app/data
+Volume=%h/codex/minecraft/data/bluemap-cli/web:/app/web
+Volume=%h/codex/minecraft/config/bluemap-cli/web:/app/web/custom:ro
+Exec=-v 1.20.1 -n /app/mods -r -u -w
+
+[Service]
+# On a fresh installation, wait for Minecraft to initialize the world.
+ExecStartPre=/usr/bin/test -s %h/codex/minecraft/data/world/level.dat
+Restart=always
+RestartSec=10s
+TimeoutStopSec=90s
+
+[Install]
+WantedBy=default.target

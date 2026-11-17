@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/wood/support/connection",
+  "textures": {
+    "texture": "minecraft:block/blackstone",
+    "particle": "minecraft:block/blackstone"
+  }
+}

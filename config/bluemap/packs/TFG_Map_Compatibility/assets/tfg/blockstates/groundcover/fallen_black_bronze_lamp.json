@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfg:block/groundcover/fallen_black_bronze_lamp"
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_black_bronze_lamp",
+        "y": 90
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_black_bronze_lamp",
+        "y": 180
+      },
+      {
+        "model": "tfg:block/groundcover/fallen_black_bronze_lamp",
+        "y": 270
+      }
+    ]
+  }
+}

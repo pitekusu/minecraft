@@ -1,0 +1,6 @@
+{
+  "parent": "additionalplacements:block/slabs/side_all/negative",
+  "textures": {
+    "all": "tfc:block/rock/mossy_cobble/basalt"
+  }
+}

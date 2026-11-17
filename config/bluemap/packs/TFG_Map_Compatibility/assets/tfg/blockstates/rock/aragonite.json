@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "tfg:block/rock/aragonite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": [
+      {
+        "model": "tfg:block/rock/aragonite"
+      },
+      {
+        "model": "tfg:block/rock/aragonite",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "tfg:block/rock/aragonite",
+        "x": 90
+      },
+      {
+        "model": "tfg:block/rock/aragonite",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

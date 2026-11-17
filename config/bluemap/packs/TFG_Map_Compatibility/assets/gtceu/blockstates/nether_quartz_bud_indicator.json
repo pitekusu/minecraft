@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator" },
+    "facing=up": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator" },
+    "facing=north": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator", "y": 180 },
+    "facing=south": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator" },
+    "facing=west": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator", "y": 90 },
+    "facing=east": { "model": "gtceu:block/bluemap/nether_quartz_bud_indicator", "y": 270 }
+  }
+}

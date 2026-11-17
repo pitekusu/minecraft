@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tfg:block/rock/glauberite",
+    "side": "tfg:block/rock/glauberite",
+    "top": "tfg:block/rock/glauberite"
+  }
+}

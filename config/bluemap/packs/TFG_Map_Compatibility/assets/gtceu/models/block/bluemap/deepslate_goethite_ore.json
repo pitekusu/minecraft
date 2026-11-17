@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "gtceu:block/bluemap/deepslate_goethite_ore",
+    "end": "gtceu:block/bluemap/deepslate_goethite_ore_top"
+  }
+}

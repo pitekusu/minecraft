@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gtceu:block/bluemap/black_sand_basaltic_mineral_sand_ore"
+  }
+}

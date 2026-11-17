@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tfg:block/rock/glauberite_slab"
+    },
+    "type=top": {
+      "model": "tfg:block/rock/glauberite_slab_top"
+    },
+    "type=double": {
+      "model": "tfg:block/rock/glauberite"
+    }
+  }
+}

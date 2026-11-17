@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "ap_axis=z,type=bottom": {
+      "model": "additionalplacements:block/tfc.rock/raw/basalt_slab_negative"
+    },
+    "ap_axis=z,type=top": {
+      "model": "additionalplacements:block/tfc.rock/raw/basalt_slab_positive"
+    },
+    "ap_axis=x,type=bottom": {
+      "model": "additionalplacements:block/tfc.rock/raw/basalt_slab_negative",
+      "y": 270
+    },
+    "ap_axis=x,type=top": {
+      "model": "additionalplacements:block/tfc.rock/raw/basalt_slab_positive",
+      "y": 270
+    },
+    "type=double": {
+      "model": "tfc:block/rock/raw/basalt"
+    }
+  }
+}

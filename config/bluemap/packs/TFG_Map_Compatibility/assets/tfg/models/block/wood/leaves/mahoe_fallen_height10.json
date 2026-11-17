@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/groundcover/fallen_leaves_height10",
+  "textures": {
+    "all": "tfg:block/wood/leaves/mahoe",
+    "particle": "tfg:block/wood/leaves/mahoe"
+  }
+}

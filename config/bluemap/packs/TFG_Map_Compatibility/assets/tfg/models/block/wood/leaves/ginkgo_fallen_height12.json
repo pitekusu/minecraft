@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/groundcover/fallen_leaves_height12",
+  "textures": {
+    "all": "tfg:block/wood/leaves/ginkgo",
+    "particle": "tfg:block/wood/leaves/ginkgo"
+  }
+}

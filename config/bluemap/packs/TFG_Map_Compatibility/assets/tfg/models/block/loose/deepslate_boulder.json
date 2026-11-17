@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs_tfc:block/ground_cover/loose/metamorphic_3",
+  "textures": {
+    "all": "minecraft:block/deepslate",
+    "particle": "minecraft:block/deepslate"
+  }
+}

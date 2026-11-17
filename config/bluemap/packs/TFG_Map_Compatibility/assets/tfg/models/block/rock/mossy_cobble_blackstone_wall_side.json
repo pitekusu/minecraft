@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "tfg:block/rock/mossy_cobble_blackstone"
+  }
+}

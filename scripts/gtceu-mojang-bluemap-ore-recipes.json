@@ -1,0 +1,379 @@
+{
+  "ores": {
+    "alunite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/granular/ore", "tint": "fbd677"},
+        {"texture": "gtceu:block/material_sets/granular/ore_layer2", "tint": "e11e0a"}
+      ]
+    },
+    "anthracite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/anthracite/ore"}
+      ]
+    },
+    "apatite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/prismatic/ore", "tint": "06cdf1"},
+        {"texture": "gtceu:block/material_sets/prismatic/ore_layer2", "tint": "701c07"}
+      ]
+    },
+    "barite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/bladed/ore", "tint": "e8e2d1"},
+        {"texture": "gtceu:block/material_sets/bladed/ore_layer2", "tint": "f4b74b"}
+      ]
+    },
+    "bismuth": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/tfc_bismuth/ore", "tint": "66847e"},
+        {"texture": "gtceu:block/material_sets/tfc_bismuth/ore_layer2", "tint": "25465b"}
+      ]
+    },
+    "bornite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "ffe05a"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "442602"}
+      ]
+    },
+    "cassiterite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_cassiterite"}
+      ]
+    },
+    "chalcocite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/monoclinic/ore", "tint": "657882"},
+        {"texture": "gtceu:block/material_sets/monoclinic/ore_layer2", "tint": "33302e"}
+      ]
+    },
+    "cinnabar": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/prismatic/ore", "tint": "ff335f"},
+        {"texture": "gtceu:block/material_sets/prismatic/ore_layer2", "tint": "3f0110"}
+      ]
+    },
+    "coal": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/lignite/ore", "tint": "393e41"},
+        {"texture": "gtceu:block/material_sets/lignite/ore_layer2", "tint": "101015"}
+      ]
+    },
+    "cobaltite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/granular/ore", "tint": "1975ff"},
+        {"texture": "gtceu:block/material_sets/granular/ore_layer2", "tint": "56071f"}
+      ]
+    },
+    "copper": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_native_copper"}
+      ]
+    },
+    "diamond": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "tfc:block/ore/diamond"}
+      ]
+    },
+    "electrotine": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/quartz/ore", "tint": "83cbf5"},
+        {"texture": "gtceu:block/material_sets/quartz/ore_layer2", "tint": "004585"}
+      ]
+    },
+    "ferhodsite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/prismatic/ore", "tint": "9c7c97"},
+        {"texture": "gtceu:block/material_sets/prismatic/ore_layer2", "tint": "b98dbd"}
+      ]
+    },
+    "galena": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "f3e8fa"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "331d42"}
+      ]
+    },
+    "garnierite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_garnierite"}
+      ]
+    },
+    "goethite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/bladed/ore", "tint": "97873a"},
+        {"texture": "gtceu:block/material_sets/bladed/ore_layer2", "tint": "313131"}
+      ]
+    },
+    "gold": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_native_gold"}
+      ]
+    },
+    "graphite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "tfc:block/ore/graphite"}
+      ]
+    },
+    "grossular": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/monoclinic/ore", "tint": "ffb777"},
+        {"texture": "gtceu:block/material_sets/monoclinic/ore_layer2", "tint": "856f48"}
+      ]
+    },
+    "hematite": {
+      "stones": ["tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_hematite"}
+      ]
+    },
+    "irarsite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/monoclinic/ore", "tint": "9f9fd2"},
+        {"texture": "gtceu:block/material_sets/monoclinic/ore_layer2", "tint": "5555cc"}
+      ]
+    },
+    "lead": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "7e6f82"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "290633"}
+      ]
+    },
+    "lignite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/lignite/ore", "tint": "362d21"},
+        {"texture": "gtceu:block/material_sets/lignite/ore_layer2", "tint": "15171a"}
+      ]
+    },
+    "magnetite": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_magnetite"}
+      ]
+    },
+    "malachite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_malachite"}
+      ]
+    },
+    "molybdenite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "e3ddc3"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "191919"}
+      ]
+    },
+    "nether_quartz": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/nether_quartz/ore", "tint": "f8efe3"},
+        {"texture": "gtceu:block/material_sets/nether_quartz/ore_layer2", "tint": "e6c1bb"}
+      ]
+    },
+    "pentlandite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/granular/ore", "tint": "e3cf13"},
+        {"texture": "gtceu:block/material_sets/granular/ore_layer2", "tint": "29315b"}
+      ]
+    },
+    "phlogopite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/sheet/ore", "tint": "d8a260"},
+        {"texture": "gtceu:block/material_sets/sheet/ore_layer2", "tint": "5a3712"}
+      ]
+    },
+    "powellite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/sheet/ore", "tint": "d8cfac"},
+        {"texture": "gtceu:block/material_sets/sheet/ore_layer2", "tint": "bc7a2c"}
+      ]
+    },
+    "pyrite": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/tfc_pyrite/ore", "tint": "fffee6"},
+        {"texture": "gtceu:block/material_sets/tfc_pyrite/ore_layer2", "tint": "b69f4e"}
+      ]
+    },
+    "pyrolusite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/botryoidal/ore", "tint": "c7b5ab"},
+        {"texture": "gtceu:block/material_sets/botryoidal/ore_layer2", "tint": "595756"}
+      ]
+    },
+    "quartzite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/quartz/ore", "tint": "f2f5ed"},
+        {"texture": "gtceu:block/material_sets/quartz/ore_layer2", "tint": "b8e2b8"}
+      ]
+    },
+    "realgar": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/prismatic/ore", "tint": "ff3d33"},
+        {"texture": "gtceu:block/material_sets/prismatic/ore_layer2", "tint": "3f0110"}
+      ]
+    },
+    "redstone": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "tfc:block/ore/cinnabar"}
+      ]
+    },
+    "ruarsite": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/monoclinic/ore", "tint": "51c2e4"},
+        {"texture": "gtceu:block/material_sets/monoclinic/ore_layer2", "tint": "a8d0f0"}
+      ]
+    },
+    "ruby": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "tfc:block/ore/ruby"}
+      ]
+    },
+    "saltpeter": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "tfc:block/ore/saltpeter"}
+      ]
+    },
+    "silver": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_native_silver"}
+      ]
+    },
+    "sphalerite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/tfc_sphalerite/ore", "tint": "ffdc88"},
+        {"texture": "gtceu:block/material_sets/tfc_sphalerite/ore_layer2", "tint": "0f1605"}
+      ]
+    },
+    "spodumene": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/sheet/ore", "tint": "ffbcbc"},
+        {"texture": "gtceu:block/material_sets/sheet/ore_layer2", "tint": "c490ff"}
+      ]
+    },
+    "stibnite": {
+      "stones": ["deepslate", "pyroxenite", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/bladed/ore", "tint": "656565"},
+        {"texture": "gtceu:block/material_sets/bladed/ore_layer2", "tint": "0a1432"}
+      ]
+    },
+    "sulfur": {
+      "stones": ["deepslate", "pyroxenite"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/tfc_sulfur/ore", "tint": "fdff31"},
+        {"texture": "gtceu:block/material_sets/tfc_sulfur/ore_layer2", "tint": "ffb400"}
+      ]
+    },
+    "tantalite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/sheet/ore", "tint": "4e6b94"},
+        {"texture": "gtceu:block/material_sets/sheet/ore_layer2", "tint": "632300"}
+      ]
+    },
+    "tetrahedrite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_tetrahedrite"}
+      ]
+    },
+    "tin": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "fafeff"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "4e676c"}
+      ]
+    },
+    "vanadium_magnetite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/cubic/ore", "tint": "505d70"},
+        {"texture": "gtceu:block/material_sets/cubic/ore_layer2", "tint": "170322"}
+      ]
+    },
+    "wulfenite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/sheet/ore", "tint": "ff9000"},
+        {"texture": "gtceu:block/material_sets/sheet/ore_layer2", "tint": "ff0000"}
+      ]
+    },
+    "yellow_limonite": {
+      "stones": ["deepslate"],
+      "layers": [
+        {"texture": "tfc:block/ore/normal_limonite"}
+      ]
+    },
+    "zeolite": {
+      "stones": ["deepslate", "tuff"],
+      "layers": [
+        {"texture": "gtceu:block/material_sets/granular/ore", "tint": "f2e3e0"},
+        {"texture": "gtceu:block/material_sets/granular/ore_layer2", "tint": "eabeb4"}
+      ]
+    }
+  },
+  "remote-texture-sha256": {
+    "gtceu:block/material_sets/anthracite/ore": "bf86d231846d80d932a9c0d39f6be92dfe0b96e88a2faf17e6ed72515b5d8334",
+    "gtceu:block/material_sets/bladed/ore": "48a836ef23aee502efc2b9c87317aadbf68c0ada2308ac91e68cb24f2f0a3575",
+    "gtceu:block/material_sets/bladed/ore_layer2": "fd0e55fa4b3b1ddaa85cef02bc0240fc3c84e2d93a2ef471ae9ae6bd5766a1d0",
+    "gtceu:block/material_sets/botryoidal/ore": "defc4499e02c69a2a224558e12f3193e9831bcd1e259ab7567fd590c69915e3f",
+    "gtceu:block/material_sets/botryoidal/ore_layer2": "404c77b6c05e97a3647e9ecbaf5bda7dd15c64ac6fee82273c4d0f8858557b74",
+    "gtceu:block/material_sets/cubic/ore": "6833af0e5ef01f33808f81d1eb10d08cbd7549c81de9d1588c9bc7254b305e9c",
+    "gtceu:block/material_sets/cubic/ore_layer2": "c896b643848d7b4ec62d8283ad23d751771c654e9a0d4264f0104aaaf26c9744",
+    "gtceu:block/material_sets/granular/ore": "b783a8c8d39f3a55424f2e6629b5d03dd034733b4f5f5f44893c4a1859fe54f9",
+    "gtceu:block/material_sets/granular/ore_layer2": "34d51f4b59d45740cd64034e157d77041ac7a726e8deaf1c1590d1ed6006bbdd",
+    "gtceu:block/material_sets/monoclinic/ore": "559a5d1131cef6f912116d4b49d57eb298b0ab953459b40d3098420b87c24e45",
+    "gtceu:block/material_sets/monoclinic/ore_layer2": "41dd0191b2293393aa1d02f89cfc7485ef3788996fbd7d076f457ab7be2fc374",
+    "gtceu:block/material_sets/nether_quartz/ore": "8266c7ec25288f35b114cb658230844429347658851e6e085c60b4f3f0ea0c42",
+    "gtceu:block/material_sets/nether_quartz/ore_layer2": "27fa56b82c4ee739f56507777bf59621a046083200cb961e56d9e9f34e2d15f6",
+    "gtceu:block/material_sets/prismatic/ore": "9acd4409410c07141d719b1e7ba8cd222fa10004cf87c78a6c4eabb41fae5efd",
+    "gtceu:block/material_sets/prismatic/ore_layer2": "a079e8a247e27a73f1a122545fc222bd23307dc298c51494b42fa8e8584b5c5c",
+    "gtceu:block/material_sets/sheet/ore": "eb7392dbbb2960a6f3c88c3c7916a85aba40ac8400cb77ab3625dcf377e53507",
+    "gtceu:block/material_sets/sheet/ore_layer2": "56194bf683a1910349c1cc74b1a9e879de581be20068e2fcdc3f66c6acb25c05",
+    "gtceu:block/material_sets/tfc_bismuth/ore": "9b31c49d24ec3e2d774b61da38292968099c3ff066339832d1524c3497e150a3",
+    "gtceu:block/material_sets/tfc_bismuth/ore_layer2": "2a2ab427ad9e077b7af26cb6cdad6c0d421860478cc049c6e2143be46c3ad09e",
+    "gtceu:block/material_sets/tfc_pyrite/ore": "6833af0e5ef01f33808f81d1eb10d08cbd7549c81de9d1588c9bc7254b305e9c",
+    "gtceu:block/material_sets/tfc_pyrite/ore_layer2": "c896b643848d7b4ec62d8283ad23d751771c654e9a0d4264f0104aaaf26c9744",
+    "gtceu:block/material_sets/tfc_sphalerite/ore": "2cf7f2536f7592467bf4abaa834aa947c5ab99e7bc107e9192f9f19a2958755c",
+    "gtceu:block/material_sets/tfc_sphalerite/ore_layer2": "4b614684bf74cef8bc35742bc85450975115f41222eadf9ea7ac78e172927014",
+    "gtceu:block/material_sets/tfc_sulfur/ore": "97bcdbd28d3536c10a62c6f1f06a40a290a1dea5631eef19c7fd08be8cd05313",
+    "gtceu:block/material_sets/tfc_sulfur/ore_layer2": "73a961b94d26189a9f5bae59b24d183a5a71f699a72475cdf13034186c4647e6"
+  }
+}

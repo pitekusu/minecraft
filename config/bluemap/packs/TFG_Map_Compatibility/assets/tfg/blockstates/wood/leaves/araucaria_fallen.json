@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "layers=8": {
+      "model": "tfg:block/wood/leaves/araucaria"
+    },
+    "layers=1": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height2"
+    },
+    "layers=2": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height4"
+    },
+    "layers=3": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height6"
+    },
+    "layers=4": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height8"
+    },
+    "layers=5": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height10"
+    },
+    "layers=6": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height12"
+    },
+    "layers=7": {
+      "model": "tfg:block/wood/leaves/araucaria_fallen_height14"
+    }
+  }
+}
