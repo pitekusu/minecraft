@@ -38,15 +38,31 @@ build_pack() {
   printf 'Built %s\n' "$destination"
 }
 
+serverpack=downloads/TerraFirmaGreg-Modern-0.13.19-serverpack.zip
 download_verified sha256sum \
-  88245a70dc3373f0c0970cc9dc56285c01587ed57b85927dff745f617c05221e \
-  downloads/TerraFirmaGreg-Modern-0.13.18-serverpack.zip \
-  https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/download/0.13.18/TerraFirmaGreg-Modern-0.13.18-serverpack.zip
+  df83e49314c3345fc21eb29e37d396e899f34ed9c951e6efecbbc661298680f5 \
+  "$serverpack" \
+  https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/download/0.13.19/TerraFirmaGreg-Modern-0.13.19-serverpack.zip
 
 download_verified sha512sum \
   e3c704792e6fc0243ecc3c7e68aab409b8475ed97b77b1cffa7feaf513e92df2b77af139e3c9a14a24eee85009bd855c7e0918d9d1d90024a98b419961054cce \
   downloads/bluemap-5.12-mc1.20-6-forge.jar \
   https://cdn.modrinth.com/data/swbUV1cr/versions/kC7iYqja/bluemap-5.12-mc1.20-6-forge.jar
+
+download_verified sha512sum \
+  edd63d431ada3bb8cacdd835169034e0caab7fdb2e3a466404ea354becb108d6083ae1e8d8cf130f9dc7a54d567a5347d8af5e22b3e63f1a467188adfe14e705 \
+  downloads/clockwork-0.5.7.1.jar \
+  https://cdn.modrinth.com/data/84USeAvk/versions/PPCx7dxb/clockwork-0.5.7.1.jar
+
+download_verified sha512sum \
+  6a0d959ed4bf76f08dcad0e6a360bda842d85386a05f510069eafbcc6b46b4216cdcfd9e377f82e4266b0f07e6b74118d8382af0bafcbdd65712f8a92f16e146 \
+  downloads/valkyrienskies-120-2.4.11.jar \
+  https://cdn.modrinth.com/data/V5ujR2yw/versions/pOkdwuUh/valkyrienskies-120-2.4.11.jar
+
+download_verified sha256sum \
+  1f70e4ada1f35d86d4e6000ad6908596865ddf471204c87e2fe0d8859f31e926 \
+  downloads/kelvin-1.20.1-0.5.2.jar \
+  https://edge.forgecdn.net/files/9602/94/kelvin-1.20.1-0.5.2.jar
 
 download_verified sha256sum \
   d022abaeac28e6f4edb200e6d928d117ad3a0367a9383a342327cc7fa52da669 \
@@ -54,7 +70,7 @@ download_verified sha256sum \
   https://github.com/Uiniel/BlueMap-Create-Resource-Pack/releases/download/v1/BlueMap-Create-Resource-Pack.zip
 
 build_pack scripts/build-wan-bluemap-pack.py downloads/BlueMap-Wan-Ancient-Beasts-1.4.3-v1.zip \
-  downloads/TerraFirmaGreg-Modern-0.13.18-serverpack.zip
+  "$serverpack"
 
 build_pack scripts/build-gtceu-mojang-bluemap-pack.py downloads/BlueMap-GTCEu-Mojang-v1.zip \
-  downloads/TerraFirmaGreg-Modern-0.13.18-serverpack.zip downloads
+  "$serverpack" downloads

@@ -1,5 +1,5 @@
 [Unit]
-Description=TerraFirmaGreg Modern 0.13.18 Minecraft server
+Description=TerraFirmaGreg Modern 0.13.19 Minecraft server
 
 [Container]
 Image=docker.io/itzg/minecraft-server:2026.11.0-java21@sha256:5fbaa7d1eb8d5575cd009c247f872d1fd6b5cd0f096e8ea173648cd4e43d52d4
@@ -22,9 +22,11 @@ Environment=VERSION=1.20.1
 Environment=FORGE_VERSION=47.4.13
 Environment=INIT_MEMORY=8G
 Environment=MAX_MEMORY=16G
-Environment=GENERIC_PACKS=/pack/TerraFirmaGreg-Modern-0.13.18-serverpack.zip
+# CVE-2026-114938 mitigation for the Java 21 runtime in this image.
+Environment=JVM_XX_OPTS=-XX:-UseBASE64Intrinsics
+Environment=GENERIC_PACKS=/pack/TerraFirmaGreg-Modern-0.13.19-serverpack.zip
 Environment=SKIP_GENERIC_PACK_UPDATE_CHECK=true
-Environment=MODS=/pack/bluemap-5.12-mc1.20-6-forge.jar
+Environment=MODS=/pack/bluemap-5.12-mc1.20-6-forge.jar,/pack/clockwork-0.5.7.1.jar,/pack/valkyrienskies-120-2.4.11.jar,/pack/kelvin-1.20.1-0.5.2.jar
 Environment=APPLY_EXTRA_FILES=config/bluemap/packs</pack/BlueMap-Create-Resource-Pack-v1.zip,config/bluemap/packs</pack/BlueMap-Wan-Ancient-Beasts-1.4.3-v1.zip,config/bluemap/packs</pack/BlueMap-GTCEu-Mojang-v1.zip
 Environment=SYNC_SKIP_NEWER_IN_DESTINATION=false
 Environment=REPLACE_ENV_DURING_SYNC=false

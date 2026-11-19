@@ -51,7 +51,7 @@ def build_pack(serverpack, output):
 
 def main():
     parser = argparse.ArgumentParser(description="Build the BlueMap overlay for Wan Ancient Beasts.")
-    parser.add_argument("serverpack", help="Verified TerraFirmaGreg Modern 0.13.18 serverpack ZIP")
+    parser.add_argument("serverpack", help="Verified TerraFirmaGreg Modern serverpack ZIP")
     parser.add_argument("output", help="Destination ZIP")
     args = parser.parse_args()
     build_pack(args.serverpack, args.output)

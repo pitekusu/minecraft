@@ -1,6 +1,6 @@
 # TerraFirmaGreg Modern サーバー
 
-Minecraft 1.20.1、Forge 47.4.13、TFG Modern 0.13.18 を Java 21 で動かす。Java ヒープは初期 8 GiB、最大 16 GiB。BlueMap 5.29 CLI は Java 25 の別コンテナで地図を描画・配信し、Forge 版 5.12 はプレイヤーの現在地と顔画像を配信する。Caddy が両方の HTTP 応答を取りまとめる。Minecraft と Caddy はホストのループバックで待ち受け、外部からは playit.gg を経由する。
+Minecraft 1.20.1、Forge 47.4.13、TFG Modern 0.13.19 を Java 21 で動かす。Java ヒープは初期 8 GiB、最大 16 GiB。BlueMap 5.29 CLI は Java 25 の別コンテナで地図を描画・配信し、Forge 版 5.12 はプレイヤーの現在地と顔画像を配信する。Caddy が両方の HTTP 応答を取りまとめる。Minecraft と Caddy はホストのループバックで待ち受け、外部からは playit.gg を経由する。
 
 ## 導入
 
@@ -25,6 +25,20 @@ systemctl --user start bluemap-proxy.service
 ```
 
 Forge 側の描画停止状態は `data/bluemap/pluginState.json` に保存される。
+
+### 既存サーバーの更新
+
+`./scripts/prepare.sh` で新しいパックを準備してから、BlueMap CLI と Minecraft を停止し、ワールドと `data/` の設定、インストール済みの Quadlet をバックアップする。`data/.generic_pack.sum` をそのバックアップ先に移してから新しい `minecraft.container` をインストールし、`systemctl --user daemon-reload` と `systemctl --user start minecraft.service` を実行する。チェックサムファイルは起動時に再生成される。Minecraft のログで `Done` を確認してから `systemctl --user start bluemap.service` を実行する。
+
+Minecraft の Java 21 イメージには、CVE-2026-114938 の暫定対策として `-XX:-UseBASE64Intrinsics` を指定する。 [Eclipse Adoptium の案内](https://adoptium.net/news/2026/11/temurin-november-2026-cspu-java4shell/)
+
+### Clockwork で参加する
+
+クライアントも TFG Modern 0.13.19 に更新し、以下の Forge 1.20.1 用 JAR をインスタンスの `mods/` に入れる。`config/lithium.properties` に有効な `mixin.ai.poi=false` があることを確認する。これは Valkyrien Skies と Radium の起動時の競合を防ぐ設定で、0.13.19 のサーバーパックには含まれている。 [TFG のオプション MOD](https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods#with-custom-recipes) · [Radium の設定](https://valkyrienskies.org/forum/help-desk/valkyrien-skies-crashes-with-radium-mqueb5dv)
+
+- [Valkyrien Skies: Clockwork 0.5.7.1](https://modrinth.com/mod/create-clockwork/version/PPCx7dxb)
+- [Valkyrien Skies 2.4.11](https://modrinth.com/mod/valkyrien-skies/version/pOkdwuUh)
+- [Kelvin Lib 0.5.2](https://www.curseforge.com/minecraft/mc-mods/kelvin-lib/files/9602094)
 
 ## 参加者の管理
 

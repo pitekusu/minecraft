@@ -18,8 +18,8 @@ from pathlib import Path
 REPOSITORY = Path(__file__).resolve().parent.parent
 RECIPES = Path(__file__).with_name("gtceu-mojang-bluemap-ore-recipes.json")
 GTCEU_MOD = "mods/gtceu-1.20.1-7.5.3.jar"
-TFG_CORE_MOD = "mods/TerraFirmaGreg-Core-Modern-0.9.34.jar"
-TFG_TEXTURES = "https://raw.githubusercontent.com/TerraFirmaGreg-Team/Modpack-Modern/0.13.18/kubejs"
+TFG_CORE_MOD = "mods/TerraFirmaGreg-Core-Modern-0.9.35.jar"
+TFG_TEXTURES = "https://raw.githubusercontent.com/TerraFirmaGreg-Team/Modpack-Modern/0.13.19/kubejs"
 CLIENT_NAME = "minecraft-client-1.20.1.jar"
 CLIENT_URL = (
     "https://piston-data.mojang.com/v1/objects/"
@@ -208,7 +208,7 @@ def write_pack(serverpack, cache_dir, output, client):
 
 def main():
     parser = argparse.ArgumentParser(description="Build local GTCEu ore textures for BlueMap.")
-    parser.add_argument("serverpack", type=Path, help="Verified TerraFirmaGreg Modern 0.13.18 serverpack ZIP")
+    parser.add_argument("serverpack", type=Path, help="Verified TerraFirmaGreg Modern serverpack ZIP")
     parser.add_argument("cache", type=Path, help="Directory for downloaded source files")
     parser.add_argument("output", type=Path, help="Destination resource pack ZIP")
     parser.add_argument("--minecraft-client", type=Path, help="Use an existing official Minecraft 1.20.1 client JAR")
